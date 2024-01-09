@@ -1,2 +1,4 @@
 
-globalThis.console.log("Hello universe");
+let hello = "Hello universe from Node.js";
+
+console.log(global.hello);
