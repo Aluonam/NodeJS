@@ -1,2 +1,4 @@
+const { saludar, saludarHolaMundo } = require("./saludos.js"); //importar modulo, se usa require en lugar de import 
 
-globalThis.console.log("Hello universe");
+console.log(saludar("Fede"));
+console.log(saludarHolaMundo());
