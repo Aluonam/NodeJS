@@ -24,3 +24,12 @@ fs.rename('index.html', 'main.html', (err)=>{
     } 
     console.log(`Nombre cambiado existosamente`)
 })
+
+// AGREGAR CONTENIDO AL FINAL DEL ARCHIVO:
+
+fs.appendFile('main.html', '<p>Hola</p>', (err)=>{
+    if(err){
+        throw err;
+    } 
+    console.log(`Dato agregado existosamente`)
+})
