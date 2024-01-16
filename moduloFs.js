@@ -8,10 +8,19 @@
 // es necesario importarlo:
 const fs = require('fs');
 
+// LEER ARCHIVO html
 fs.readFile('index.html', 'utf-8', (err, contenido)=>{
     if (err){
         console.log(err)
     } else{
         console.log(contenido)
     }
+})
+
+// RENOMBRAR ARCHIVO
+fs.rename('index.html', 'main.html', (err)=>{
+    if(err){
+        throw err;
+    } 
+    console.log(`Nombre cambiado existosamente`)
 })
