@@ -17,19 +17,28 @@ fs.readFile('index.html', 'utf-8', (err, contenido)=>{
     }
 })
 
-// RENOMBRAR ARCHIVO
-fs.rename('index.html', 'main.html', (err)=>{
-    if(err){
-        throw err;
-    } 
-    console.log(`Nombre cambiado existosamente`)
-})
+// // RENOMBRAR ARCHIVO
+// fs.rename('index.html', 'main.html', (err)=>{
+//     if(err){
+//         throw err;
+//     } 
+//     console.log(`Nombre cambiado existosamente`)
+// })
 
 // AGREGAR CONTENIDO AL FINAL DEL ARCHIVO:
 
-fs.appendFile('main.html', '<p>Hola</p>', (err)=>{
+fs.appendFile('main.html', ' <p>Hola</p>', (err)=>{
     if(err){
         throw err;
     } 
     console.log(`Dato agregado existosamente`)
+})
+
+// REEMPLAZAR TODO EL CONTENIDO DEL ARCHIVO:
+
+fs.writeFile('main.html', '<p>Hola a todos</p>', (err)=>{
+    if(err){
+        throw err;
+    } 
+    console.log(`Contenido reemplazado existosamente`)
 })
