@@ -42,3 +42,12 @@ fs.writeFile('main.html', '<p>Hola a todos</p>', (err)=>{
     } 
     console.log(`Contenido reemplazado existosamente`)
 })
+
+// ELIMINAR ARCHIVO
+
+fs.unlink('archivoBorrar.js', (err)=>{
+    if(err){
+        throw err;
+    } 
+    console.log(`Archivo borrado exitosamente`)
+})
