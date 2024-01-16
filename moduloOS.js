@@ -12,3 +12,6 @@ console.log(os.homedir())
 // Tiempo que lleva ejecutandose
 console.log(os.uptime())
 
+
+// Info del usuario que ejecuta
+console.log(os.userInfo())
