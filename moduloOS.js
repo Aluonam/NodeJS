@@ -9,3 +9,6 @@ console.log(os.type())
 // directorio o carpeta principal donde se ejecuta
 console.log(os.homedir())
 
+// Tiempo que lleva ejecutandose
+console.log(os.uptime())
+
