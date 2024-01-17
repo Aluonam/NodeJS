@@ -1,7 +1,6 @@
 // PROMISES: objeto de JS con tres estados: cumplida, rechazada o en espera.
 
 // Función callback: funcion que se pasa a otra como argumento y que se ejecutará en esa funcion externa.
-
 // .then es un metodo utilizado en estas promesas para decidir que ocurre al completar la promesa.
 // una promesa se crea con new Promise y con una función flecha dentro que recibe dos parametros resuelto y rechazado.
 
@@ -28,3 +27,6 @@ const manejarPromesaRechazada = (razonRechazo)=>{
 }
 
 miPromesa.then(manejarPromesaCumplida, manejarPromesaRechazada)
+
+
+// miPedidoPizza.then(manejarPedido).catch(manejarRechazo)
