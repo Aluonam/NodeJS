@@ -1,4 +1,4 @@
-
+// Permite ver información de los procesos
 console.log(process)
 
 console.log(process.env)

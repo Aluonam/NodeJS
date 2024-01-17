@@ -1,0 +1,11 @@
+{
+  "name": "example-nodejs",
+  "version": "1.0.0",
+  "description": "first example create nodejs with npm",
+  "main": "exStandarInputOutput.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paula",
+  "license": "ISC"
+}
