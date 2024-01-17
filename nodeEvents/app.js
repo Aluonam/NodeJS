@@ -14,3 +14,15 @@ emisorProductos.on('compra', ()=>{
 });
 
 emisorProductos.emit('compra'); // cuando ocurra la compra se ejecutará la función
+
+
+// --------------- Ejemplo nuevo emisor con más parámetros
+
+const emisorVariosProductos = new EventEmitter();
+
+emisorVariosProductos.on('compra', (total, numProductos)=>{
+    console.log(`Total de la compra ${total}€`)
+    console.log(`Total de productos ${numProductos}`)
+});
+
+emisorVariosProductos.emit('compra', 500, 10); 
